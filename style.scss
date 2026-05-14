@@ -1,0 +1,135 @@
+$font-family: 'Inter', sans-serif;
+$white: #ffffff;
+$green-bg: #37b36a;
+$blue-bg: #2bc3e0;
+$dark-blue: #1a2b49;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-family;
+}
+
+.a1 {
+    padding: 40px;
+    background-color: #fcfcfc;
+}
+
+.b1 {
+    font-size: 32px;
+    color: $dark-blue;
+    margin-bottom: 40px;
+    font-weight: 800;
+}
+
+.c1 {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.d1 {
+    flex: 1;
+    min-width: 450px;
+    border-radius: 12px;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    min-height: 400px;
+    
+    &.e1 { background-color: $green-bg; }
+    &.n1 { background-color: $blue-bg; }
+}
+
+.f1 {
+    width: 60%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.g1 {
+    color: $white;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.h1 {
+    color: rgba($white, 0.9);
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.i1 {
+    margin-top: auto;
+    margin-bottom: 25px;
+}
+
+.j1 {
+    color: rgba($white, 0.8);
+    font-size: 14px;
+}
+
+.k1 {
+    color: $white;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.l1 {
+    background: $white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 50px;
+    color: $green-bg;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.2s;
+
+    &:hover { transform: scale(1.05); }
+    &.o1 { color: $blue-bg; }
+}
+
+.m1 {
+    position: absolute;
+    right: -20px;
+    bottom: 20px;
+    width: 50%;
+    object-fit: contain;
+}
+
+
+@media (max-width: 768px) {
+    .a1 { padding: 20px; }
+    
+    .c1 { flex-direction: column; }
+    
+    .d1 {
+        min-width: 100%;
+        padding: 25px;
+        flex-direction: column;
+        min-height: auto;
+    }
+    
+    .f1 { width: 100%; }
+    
+    .m1 {
+        position: relative;
+        width: 80%;
+        right: 0;
+        bottom: 0;
+        margin: 20px auto 0;
+    }
+    
+    .g1 { font-size: 22px; }
+}
